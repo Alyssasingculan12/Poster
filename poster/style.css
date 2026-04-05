@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(45deg, #090a66, #476ab6, #98d3ee);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poster{
+    width: 50%
+    border-radius: 15px;
+    border: 1px solid;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+}
+.typing-text::after{
+    content: "your life is worth to live"
+    animation: typing 4s steps(30) infinite;
+    color: black;
+    font: 15px Arial
+
+}
+@keyframes typing {
+    50%{
+        content: "your life is worth to live"
+    }
+}
